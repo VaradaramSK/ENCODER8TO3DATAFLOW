@@ -36,7 +36,7 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+ write all the steps invloved 
 ```
 1.Type the program in Quartus software.
 2.Compile and run the program.
@@ -49,7 +49,9 @@ Figure 02  Encoder 8 * 3
 Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
 Developed by: Varadaram sk
+
 RegisterNumber:212223040232
+
 ```
 module encoder83(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
 input d0,d1,d2,d3,d4,d5,d6,d7;
@@ -71,6 +73,7 @@ endmodule
 ![image](https://github.com/VaradaramSK/ENCODER8TO3DATAFLOW/assets/144356171/eec544c6-20a1-4794-95b0-38e80fd35372)
 
 **RESULTS**
+
 Thus, the code is executed successfully.
 
 
