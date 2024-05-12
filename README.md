@@ -36,45 +36,48 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
- write all the steps invloved 
-```
+/* write all the steps invloved */
+
+~~~
 1.Type the program in Quartus software.
+
 2.Compile and run the program.
+
 3.Generate the RTL schematic and save the logic diagram.
+
 4.Create nodes for inputs and outputs to generate the timing diagram.
+
 5.For different input combinations generate the timing diagram.
-```
+
+~~~
+
 **PROGRAM**
 
-Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
-
-Developed by: Varadaram sk
-
-RegisterNumber:212223040232
-
-```
-module encoder83(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
-input d0,d1,d2,d3,d4,d5,d6,d7;
-output a0,a1,a2;
-//add logic here using dataflow modelling
-assign ao=d1|d3|d5|d7;
-assign a1=d2|d3|d6|d7;
-assign a2=d4|d5|d6|d7;
+/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
+~~~
+module EX05(din, a, b, c); 
+input [0:7] din; 
+output a,b,c; 
+assign a= (din[4] | din[5] | din[6] | din[7]); 
+assign b= (din[2] | din[3] | din[6] | din[7]);
+assign c= (din[1] | din[3] | din[5] | din[7]);
 endmodule
-```
+~~~
+
+Developed by: Varadaram SK 
+RegisterNumber: 212223040232
+*/
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
-![image](https://github.com/VaradaramSK/ENCODER8TO3DATAFLOW/assets/144356171/09126f87-9471-4641-a450-387d39aa8cf7)
-
+![319870155-bff96462-4812-457a-b9d9-c539895c968d](https://github.com/04Varsha/ENCODER8TO3DATAFLOW/assets/149035374/29eb045b-c9ea-4990-9d68-c73ca7e0490c)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
-![image](https://github.com/VaradaramSK/ENCODER8TO3DATAFLOW/assets/144356171/eec544c6-20a1-4794-95b0-38e80fd35372)
+![319870178-f3bb2348-3b1f-4b23-a8ca-4e1dc8e2bffe](https://github.com/04Varsha/ENCODER8TO3DATAFLOW/assets/149035374/e7d13f32-64fb-4bf0-ae63-698e23f1e3fb)
 
 **RESULTS**
 
-Thus, the code is executed successfully.
-
+Thus the implement Encoder 8 To 3 in Dataflow Modelling using verilog in Quartus software is successfully verified.
 
 
